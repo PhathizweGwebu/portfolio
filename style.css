@@ -65,6 +65,11 @@ button:hover{
 
 /* My skills */
 
+.skills-icons{
+    width: 500px;
+    overflow-x: auto;
+}
+
 .skills-section ul{
     display: flex;
     list-style: none;
@@ -94,8 +99,8 @@ button:hover{
 /* Projects section */
 
 .project-card{
-    margin-block: 5px;
-    width: 200px;
+    margin-block: 15px;
+    width: 340px;
     height: 200px;
     background-color: #AED2FF;
     transition: transform 0.2s ease-in-out;
