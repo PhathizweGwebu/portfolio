@@ -13,13 +13,14 @@
         <!-- navigation  -->
         <nav>
             <h1>Phathizwe.</h1>
-            <ul>
-                <li><a href="#hero-section">Home</a></li>
-                <li><a href="#about-me-section">About me</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#contact-section">contact me</a></li>
-                <li><i class="fa-solid fa-bars burger-icon"></i></li>
+            <ul class="nav-list active">
+                <li class="nav-item"><a href="#hero-section">Home</a></li>
+                <li class="nav-item"><a href="#about-me-section">About me</a></li>
+                <li class="nav-item"><a href="#projects-section">Projects</a></li>
+                <li class="nav-item"><a href="#contact-section">contact me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <!-- Hero section -->
         <div class="hero-section">
@@ -30,7 +31,7 @@
                 <button>Contact me</button>
             </div>
 
-            <div>
+            <div class="hero-icon">
                 <i class="fa-sharp fa-solid fa-laptop-code laptop-icon"></i>
             </div>
         </div>
