@@ -1,0 +1,248 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #F1C93B;
+}
+
+section{
+    margin: 0.5rem 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #F1C93B;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #F1C93B;
+}
+
+
+
+nav ul li:hover{
+    color: white;
+    background: black;
+}
+
+.burger-icon{
+    font-size: 25px;
+}
+
+button{
+    padding: 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 2px;
+    margin: 15px 15px;
+    background-color: #F1C93B;
+}
+
+button:hover{
+    color: #9400FF;
+    background-color: #E4F1FF;
+    cursor: pointer;
+}
+
+
+/* My skills */
+
+.skills-section ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.skills-section ul li {
+    margin: 1rem;
+    font-size: 60px;
+}
+
+.skills-section ul li:hover{
+    transform: scale(1.2);
+}
+
+/* about me section */
+
+.about-me-img{
+    max-width: 400px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+
+/* Projects section */
+
+.project-card{
+    margin-block: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: #AED2FF;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.project-card h2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* form section */
+
+.contact-me-headline{
+    text-align: center;
+    padding: 3rem;
+    color: #F1C93B;
+    font-size: 3rem;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom: 4rem;
+    
+}
+
+form input, form textarea{
+    max-width: 100%;
+    border: 0;
+    outline: none;
+    background: #F1C93B;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: black;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    width: 1rem;
+    padding: 14px 50px;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 0 auto;
+    background: #F1C93B;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 600px) {
+    section{
+        margin: 1rem 10rem;
+    }
+
+    .hero-section{
+        padding-block: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #F1C93B;
+    }
+    .hero-section  div i{
+        font-size: 300px;
+    }
+
+    .hero-section h1{
+        margin-bottom: 3rem;
+        font-size: 3rem;
+    }
+
+    .hero-section p{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .skills-section{
+        padding-block: 4rem;
+        color: #F1C93B;
+    }
+
+    .skills-section h1{
+        text-align: center;
+        margin-bottom: 5rem;
+        font-size: 3rem;
+    }
+
+    .skills-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-me-section h1{
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 3rem;
+    }
+
+    .about-me-col{
+        display: flex;
+    }
+
+    .about-me-col p{
+        text-align: center;
+        padding: 5rem;
+        box-shadow:5px 5px 10px #858383;
+    }
+
+    .projects-section h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .projects{
+        display: flex;
+    }
+
+    .project-card{
+        margin: 10px;
+        transition: 1.ms;
+        box-shadow:5px 5px 10px #858383;
+    }
+    .project-card:hover{
+        transform: scale(1.2s);
+        background-color: #fff;
+    }
+  }
