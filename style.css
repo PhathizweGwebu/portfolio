@@ -33,4 +33,47 @@ img{
     display: block;
 }
 
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+button{
+    color: black;
+    background-color: #F1C93B;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8em;
+}
+
+.split{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.hero-icon{
+    font-size: 15rem;
+}
+
+
+
+.nav-list li{
+    padding: 1em;
+
+}
+
+@media(min-width: 40em) {
+    .split{
+        flex-direction: row;
+    }
+
+    .hero-section{
+        text-align: justify;
+    }
+}
+
 
