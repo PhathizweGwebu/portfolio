@@ -1,238 +1,36 @@
-body{
-    background-color: black;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: #F1C93B;
 }
 
+body{
+    background-color: black;
+    font-weight: 400;
+    font-size: 1.312rem;
+    line-height: 1.6;
+}
+
+h1,h2{
+    font-weight: 900;
+}
+
+h2,p{
+    margin-bottom: 1em;
+}
+
 section{
-    margin: 0rem 9rem;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-
-nav ul li{
-    cursor: pointer;
-    font-weight: 600;
-    color: #F1C93B;
-    padding: 1rem;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #F1C93B;
-}
-
-
-
-nav ul .fa-xmark{
-    cursor: pointer;
-}
-
-
-
-nav ul li:hover{
-    color: white;
-    background: black;
-}
-
-.fa-bars{
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.hero-section{
-    padding-block: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-section h1{
-    font-size: 3rem;
-}
-
-.hero-section p{
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
-}
-
-.hero-icon{
-    font-size: 18rem;
-}
-
-button{
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 2px;
-    background-color: #F1C93B;
-    margin-right: 2rem;
-}
-
-button:hover{
-    color: #F1C93B;
-    background-color: black;
-    cursor: pointer;
-}
-
-
-/* My skills */
-
-.skills-section{
-    margin-block: 7rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 10rem;
-}
-
-.skills-section h1{
-    font-size: 2.5rem;
-}
-
-.skills-section ul{
-    display: flex;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-.skills-section ul li {
-    margin: 1rem;
-    font-size: 60px;
-}
-
-.skills-section ul li:hover{
-    transform: scale(1.2);
-}
-
-/* about me section */
-
-.about-me-section{
-    margin-inline: 19rem;
-}
-
-.about-me-col{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about-me-col p{
-    max-width: 300px;
-    padding: 4rem;
-    box-shadow: 5px 10px 15px rgba(83, 82, 82, 0.5);
-}
-
-.about-me-img{
-    max-width: 400px;
-    max-height: 300px;
-    object-fit: contain;
-}
-
-
-/* Projects section */
-.projects-section h1{
-    margin-left: 9rem;
-    font-size: 2.5rem;
-}
-
-.projects{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-inline: 9rem;
-}
-
-.project-card{
-    margin-block: 2.3rem;
-    width: 340px;
-    height: 200px;
-    background-color: black;
-    transition: transform 0.2s ease-in-out;
-    border-radius: 2px;
-    border: 2px solid #F1C93B;
-    padding: 10px;
-}
-
-.project-card:hover{
-    transform: scale(1.2);
-}
-
-.project-card h2{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* form section */
-
-.contact-me-headline{
+    margin-inline: auto;
+    width: min(90%, 70.5rem); 
+    margin-bottom:1em ;
     text-align: center;
-    padding: 3rem;
-    color: #F1C93B;
-    font-size: 3rem;
 }
 
-.contact-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    padding: 0.5rem;
-    margin-bottom: 4rem;
-    
-}
-
-form input, form textarea{
+img{
     max-width: 100%;
-    border: 0;
-    outline: none;
-    background: #F1C93B;
-    padding: 15px;
-    margin: 15px 0;
-    font-size: 18px;
-    border-radius: 2px;
+    display: block;
 }
 
-input::placeholder, textarea::placeholder {
-    color: black;
-}
 
-.btn{
-    display: flex;
-    justify-content: space-around;
-    width: 1rem;
-    padding: 14px 50px;
-    border-radius: 2px;
-    text-decoration: none;
-    margin: 0 auto;
-    background: #F1C93B;
-    color: black;
-}
-
-footer{
-    text-align: center;
-    margin-bottom: 2rem;
-}
