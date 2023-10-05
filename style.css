@@ -68,7 +68,16 @@ button{
 .about-me-col p{
     padding: 1em;
     box-shadow: 5px 5px 5px rgb(59, 59, 59);
-    max-width: 40%;
+}
+
+.skills-section ul{
+    font-size: 6rem;
+}
+
+.project-card{
+    max-width: 20rem;
+    max-height: 25rem;
+    border: 2px solid #F1C93B;
 }
 
 @media(min-width: 40em) {
@@ -89,6 +98,31 @@ button{
     img{
         max-width: 40%;
     }
+
+    .skills-section{
+        margin-block: 5rem;
+    }
+
+    .skills-section ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 60%;
+        margin-inline: auto;
+    }
+
+    .skills-section ul li{
+        font-size: 3rem;
+    }
+
+    .projects{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    
     
 }
 
