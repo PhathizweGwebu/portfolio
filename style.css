@@ -4,12 +4,10 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #F1C93B;
-
-    overflow-x: hidden;
 }
 
 section{
-    margin: 0.5rem 1rem;
+    margin: 0rem 9rem;
 }
 
 nav{
@@ -19,19 +17,10 @@ nav{
 }
 
 nav ul{
-    margin-top: 0;
     list-style: none;
     display: flex;
-    flex-direction: column;
     justify-content:space-between;
-    width: 200px;
-    height: 50vh;
-    padding: 1rem;
-    display: block;
-}
-
-.active{
-    display: block;
+    align-items: center;
 }
 
 nav ul li{
@@ -49,9 +38,6 @@ nav ul li a{
 
 
 nav ul .fa-xmark{
-    position: absolute;
-    top: 25px;
-    left: 25px;
     cursor: pointer;
 }
 
@@ -68,35 +54,55 @@ nav ul li:hover{
 }
 
 .hero-section{
-    text-align: center;
+    padding-block: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section h1{
+    font-size: 3rem;
+}
+
+.hero-section p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 .hero-icon{
-    font-size: 10rem;
-    text-align: center;
+    font-size: 18rem;
 }
 
 button{
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     border: none;
     border-radius: 2px;
-    margin: 15px 15px;
     background-color: #F1C93B;
+    margin-right: 2rem;
 }
 
 button:hover{
-    color: #9400FF;
-    background-color: #E4F1FF;
+    color: #F1C93B;
+    background-color: black;
     cursor: pointer;
 }
 
 
 /* My skills */
 
-.skills-icons{
-    width: 500px;
-    overflow-x:scroll;
+.skills-section{
+    margin-block: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10rem;
+}
+
+.skills-section h1{
+    font-size: 2.5rem;
 }
 
 .skills-section ul{
@@ -118,6 +124,22 @@ button:hover{
 
 /* about me section */
 
+.about-me-section{
+    margin-inline: 19rem;
+}
+
+.about-me-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me-col p{
+    max-width: 300px;
+    padding: 4rem;
+    box-shadow: 5px 10px 15px rgba(83, 82, 82, 0.5);
+}
+
 .about-me-img{
     max-width: 400px;
     max-height: 300px;
@@ -126,9 +148,20 @@ button:hover{
 
 
 /* Projects section */
+.projects-section h1{
+    margin-left: 9rem;
+    font-size: 2.5rem;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 9rem;
+}
 
 .project-card{
-    margin-block: 15px;
+    margin-block: 2.3rem;
     width: 340px;
     height: 200px;
     background-color: black;
@@ -136,6 +169,10 @@ button:hover{
     border-radius: 2px;
     border: 2px solid #F1C93B;
     padding: 10px;
+}
+
+.project-card:hover{
+    transform: scale(1.2);
 }
 
 .project-card h2{
@@ -199,103 +236,3 @@ footer{
     text-align: center;
     margin-bottom: 2rem;
 }
-
-
-/* Responsiveness */
-
-@media (min-width: 600px) {
-    section{
-        margin: 1rem 10rem;
-        
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        border: 2px solid red;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        height: 8vh;
-    }
-
-    nav .fa-solid{
-        display: none;
-    }
-
-    .hero-section{
-        padding-block: 5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #F1C93B;
-    }
-    .hero-section  div i{
-        font-size: 300px;
-    }
-
-    .hero-section h1{
-        margin-bottom: 3rem;
-        font-size: 3rem;
-    }
-
-    .hero-section p{
-        font-size: 2rem;
-        font-weight: 500;
-    }
-
-    .skills-section{
-        padding-block: 4rem;
-        color: #F1C93B;
-    }
-
-    .skills-section h1{
-        text-align: center;
-        margin-bottom: 5rem;
-        font-size: 3rem;
-    }
-
-    .skills-icons{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    .about-me-section h1{
-        text-align: center;
-        margin-bottom: 3rem;
-        font-size: 3rem;
-    }
-
-    .about-me-col{
-        display: flex;
-    }
-
-    .about-me-col p{
-        text-align: center;
-        padding: 5rem;
-        box-shadow:5px 5px 10px #858383;
-    }
-
-    .projects-section h1{
-        text-align: center;
-        font-size: 3rem;
-    }
-
-    .projects{
-        display: flex;
-    }
-
-    .project-card{
-        margin: 10px;
-        transition: 1.ms;
-        box-shadow:5px 5px 10px #858383;
-    }
-    .project-card:hover{
-        transform: scale(1.2s);
-        background-color: #fff;
-    }
-  }
