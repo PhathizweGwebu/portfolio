@@ -114,6 +114,10 @@ form button{
     padding: 1rem;
 }
 
+.fa-brands{
+    font-size: 5rem;
+}
+
 @media(min-width: 40em) {
 
     section{
