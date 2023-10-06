@@ -115,6 +115,10 @@ form button{
 }
 
 @media(min-width: 40em) {
+
+    section{
+        margin-inline: 10rem;
+    }
     .split{
         flex-direction: row;
     }
@@ -197,6 +201,11 @@ form button{
         border:2px solid #F1C93B;
         background-color: black;
         transform: scale(1.25);
+    }
+
+    form{
+        max-width: 60%;
+        margin-inline: auto;
     }
     
 
